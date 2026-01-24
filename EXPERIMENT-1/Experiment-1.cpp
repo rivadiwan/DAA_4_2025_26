@@ -1,22 +1,20 @@
-//#include <bits/stdc++.h>
-
-//UID = 24BCS10039
-//NAME = ABHINEET
-
-
-//Experiment - 1
-
-//Recurrence relation
-
-// COST = 1 + N + NlogN + N/2 = NlogN
-// T(N) = NlogN + 3T(N/2)
+/*
+UID = 24BCS11029
+NAME = Riva Diwan
 
 
-//Time complexity
+Experiment - 1
 
-//    O(N^(log Base 2 of 3) 
-//    Case 1 Used
+Recurrence relation for the given code:
+T(n)=3T(n/2)+Nlogn
+Case 1 : a = 3, b = 2, k = 1
+logb(a) = log2(3) > k = 1
+Hence, according to Master Theorem,  
+T(n) = Θ(n^(log2(3)))
 
+ COST = 1 + N + NlogN + N/2 = NlogN
+
+*/
 
 #include <iostream>
 #include <vector>
@@ -82,4 +80,3 @@ int main()
 
     cout<<"Recurrence Relation : NlogN + 3T(N/2)";
 }
-
